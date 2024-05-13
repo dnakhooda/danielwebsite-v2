@@ -1,0 +1,22 @@
+.timeline_section {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline {
+  height: 100%;
+  width: 5px;
+}
+
+.timeline_transition {
+  height: 100%;
+  width: 5px;
+}
+
+.timeline_date_section {
+  width: 20%;
+  display: flex;
+  font-size: min(2vw, 1.25em);
+}

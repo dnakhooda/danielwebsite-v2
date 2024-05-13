@@ -1,0 +1,12 @@
+footer {
+  margin-top: 125px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_text {
+  margin: 5px;
+}

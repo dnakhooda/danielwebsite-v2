@@ -5,53 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Website</title>
   <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/colors.css" />
+
+  <link rel="stylesheet" href="./css/index/content_display.css" />
+  <link rel="stylesheet" href="./css/index/timeline.css" />
+  <link rel="stylesheet" href="./css/index/footer.css" />
 </head>
 <body>
   <div class="main_body">
-    <div class="website_title_container">
-      <div class="website_title">
-        <span class="website_title_letter">D</span>
-        <span class="website_title_letter">a</span>
-        <span class="website_title_letter">n</span>
-        <span class="website_title_letter">i</span>
-        <span class="website_title_letter">e</span>
-        <span class="website_title_letter">l</span>
-        <span class="website_title_letter">&nbsp;</span>
-        <span class="website_title_letter">W</span>
-        <span class="website_title_letter">e</span>
-        <span class="website_title_letter">b</span>
-        <span class="website_title_letter">s</span>
-        <span class="website_title_letter">i</span>
-        <span class="website_title_letter">t</span>
-        <span class="website_title_letter">e</span>
-      </div>
+
+
+    <!-- Title Section -->
+    <div class="full_screen_section">
+      <span>D</span>
+      <span>a</span>
+      <span>n</span>
+      <span>i</span>
+      <span>e</span>
+      <span>l</span>
+      <span>&nbsp;</span>
+      <span>W</span>
+      <span>e</span>
+      <span>b</span>
+      <span>s</span>
+      <span>i</span>
+      <span>t</span>
+      <span>e</span>
     </div>
 
-    <div class="website_title_container">
+
+    <!-- Programming Journey Section -->
+    <div class="full_screen_section">
       <h1 id="journey_title">My Programming Journey</h1>
     </div>
 
+
     <div class="content">
 
-      <div class="content_item" id="2019_content">
 
-        <div class="timeline">
-          <div id="timeline_line_2019"></div>
+      <!-- ------- -->
+      <!-- 2019 🟦 -->
+      <!-- ------- -->
+      <div class="content_item">
+
+        <!-- 2019 Timeline 🟦 -->
+        <div class="timeline_section">
+          <div class="timeline cyan_background" style="border-top-right-radius: 5px; border-top-left-radius: 5px;"></div>
         </div>
 
-        <div class="timeline_dates">
+        <!-- 2019 Timeline Date 🟦 -->
+        <div class="timeline_date_section">
           <h1 class="title_date cyan">2019</h1>
         </div>
 
-        <div class="content_text" id="2019_text">
+        <!-- 2019 Text & Images & Buttons 🟦 -->
+        <div class="content_text">
 
-          <h1 class="item_title cyan">My First Few Programming Projects</h1>
+          <h1 class="content_item_title cyan">My First Few Programming Projects</h1>
 
           <p class="cyan">&emsp;I started truly programming in 2019. I had already learned HTML, CSS, and Javascript, and wanted to start developing my own projects. I created a simple 2d game where the player moves a dot character from the left to the right side of the screen using the arrow keys. I called it "Dot Game" and published it as a Google Chrome extension. You can play the game by pressing the "Dot Game" button below the text (unfortunately the game can only be played using a keyboard).</p>
           
-          <div class="game-container">
+          <div class="content_button_image_container">
             <a href="http://www.danielwebsite.com/games/TheDotGame/Dot.html">
-              <button class="game-button-2019">
+              <button class="cyan_border">
                   <h2 class="cyan">The Dot Game</h2>
                   <p id="Dot-Completion"></p>
               </button>
@@ -62,11 +78,11 @@
 
           <p class="cyan">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           
-          <div class="game-container">
+          <div class="content_button_image_container">
             <img src="../public/AliensImage1.PNG" alt="Aliens Image" class="cyan_border" style="margin: 30px;">
             
             <a href="http://www.danielwebsite.com/games/Aliens/Space.html">
-              <button class="game-button-2019">
+              <button class="cyan_border">
                   <h2 class="cyan">Aliens</h2>
                   <p id="Aliens-Completion"></p>
               </button>
@@ -75,9 +91,9 @@
           
           <p class="cyan">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           
-          <div class="game-container">
+          <div class="content_button_image_container">
             <a href="http://www.danielwebsite.com/games/Space/home.html">
-              <button class="game-button-2019">
+              <button class="cyan_border">
                   <h2 class="cyan">Space</h2>
                   <p id="Space-Completion"></p>
               </button>
@@ -91,141 +107,183 @@
         </div>
       </div>
 
+
       <div class="content_item_margin" id="2019_2020_content">
-        <div class="timeline">
-          <div id="timeline_line_2019_to_2020"></div>
+        <div class="timeline_section">
+          <div class="timeline_transition" style="background-image: linear-gradient(#0ff, #f00);"></div>
         </div>
       </div>
 
 
+      <!-- ------- -->
+      <!-- 2020 🟥 -->
+      <!-- ------- -->
       <div class="content_item" id="2020_content">
 
-        <div class="timeline">
-          <div id="timeline_line_2020"></div>
+        <div class="timeline_section">
+          <div class="timeline red_background"></div>
         </div>
 
-        <div class="timeline_dates">
+        <div class="timeline_date_section">
           <h1 class="title_date red">2020</h1>
         </div>
 
         <div class="content_text" id="2020_text">
           
-          <h1 class="item_title red">Developing My Website</h1>
+          <h1 class="content_item_title red">Developing My Website</h1>
           
           <p class="red">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           
-          <div class="game-container">
+          <div class="content_button_image_container">
             <img src="../public/WebsiteImage1.PNG" alt="Space Image" class="red_border" style="margin: 30px;">
           </div>
 
         </div>
       </div>
 
+
+
+
       <div class="content_item_margin" id="2020_2021_content">
-        <div class="timeline">
-          <div id="timeline_line_2020_to_2021"></div>
+        <div class="timeline_section">
+          <div class="timeline_transition" style="background-image: linear-gradient(#f00, #a0f);"></div>
         </div>
       </div>
 
+
+
+      <!-- ------- -->
+      <!-- 2021 🟪 -->
+      <!-- ------- -->
       <div class="content_item" id="2021_content">
 
-        <div class="timeline">
-          <div id="timeline_line_2021"></div>
+        <div class="timeline_section">
+          <div class="timeline purple_background"></div>
         </div>
 
-        <div class="timeline_dates">
+        <div class="timeline_date_section">
           <h1 class="title_date purple">2021</h1>
         </div>
 
         <div class="content_text" id="2021_text">
 
-          <h1 class="item_title purple">Developing My Game Engine</h1>
+          <h1 class="content_item_title purple">Developing My Game Engine</h1>
 
           <p class="purple">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
         </div>
       </div>
 
+
+
+
+
+      <!-- ------- -->
+      <!-- 2022 🌷 -->
+      <!-- ------- -->
       <div class="content_item_margin" id="2021_2022_content">
-        <div class="timeline">
-          <div id="timeline_line_2021_to_2022"></div>
+        <div class="timeline_section">
+          <div class="timeline_transition" style="background-image: linear-gradient(#a0f, #f0f);"></div>
         </div>
       </div>
 
       <div class="content_item" id="2022_content">
 
-        <div class="timeline">
-          <div id="timeline_line_2022"></div>
+        <div class="timeline_section">
+          <div class="timeline pink_background"></div>
         </div>
 
-        <div class="timeline_dates">
+        <div class="timeline_date_section">
           <h1 class="title_date pink">2022</h1>
         </div>
 
         <div class="content_text" id="2022_text">
 
-          <h1 class="item_title pink">wfioawifjoa</h1>
+          <h1 class="content_item_title pink">wfioawifjoa</h1>
 
           <p class="pink">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
         </div>
       </div>
 
+
+
+
+
       <div class="content_item_margin" id="2022_2023_content">
-        <div class="timeline">
-          <div id="timeline_line_2022_to_2023"></div>
+        <div class="timeline_section">
+          <div class="timeline" style="background-image: linear-gradient(#f0f, #fa0);"></div>
         </div>
       </div>
 
+
+
+
+
+      <!-- ------- -->
+      <!-- 2023 🟧 -->
+      <!-- ------- -->
       <div class="content_item" id="2023_content">
 
-        <div class="timeline">
-          <div id="timeline_line_2023"></div>
+        <div class="timeline_section">
+          <div class="timeline orange_background"></div>
         </div>
 
-        <div class="timeline_dates">
+        <div class="timeline_date_section">
           <h1 class="title_date orange">2023</h1>
         </div>
 
         <div class="content_text" id="2023_text">
 
-          <h1 class="item_title orange">wfioawifjoa</h1>
+          <h1 class="content_item_title orange">wfioawifjoa</h1>
 
           <p class="orange">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
         </div>
       </div>
 
+
+
+
+
       <div class="content_item_margin" id="2023_2024_content">
-        <div class="timeline">
-          <div id="timeline_line_2023_to_2024"></div>
+        <div class="timeline_section">
+          <div class="timeline" style="background-image: linear-gradient(#fa0, #0f0);"></div>
         </div>
       </div>
 
+
+
+
+      <!-- ------- -->
+      <!-- 2024 🟧 -->
+      <!-- ------- -->
       <div class="content_item" id="2024_content">
 
-        <div class="timeline">
-          <div id="timeline_line_2024"></div>
+        <div class="timeline_section">
+          <div class="timeline green_background" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;"></div>
         </div>
 
-        <div class="timeline_dates">
+        <div class="timeline_date_section">
           <h1 class="title_date">2024</h1>
         </div>
 
         <div class="content_text" id="2024_text">
 
-          <h1 class="item_title">wfioawifjoa</h1>
+          <h1 class="content_item_title">wfioawifjoa</h1>
 
           <p>&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
         </div>
       </div>
 
+
+
     </div>
 
     <footer>
-      <span class="footer_span">Email: daniel@danielwebsite.com</span>
-      <span class="footer_span">Thank You for Visiting!</span>
+      <p class="footer_text">Email: daniel@danielwebsite.com</span>
+      <p class="footer_text">Thank You for Visiting!</span>
     </footer>
   </div>
 

@@ -1,4 +1,4 @@
-let titleCharacters = document.getElementsByClassName("website_title")[0].children
+let titleCharacters = document.getElementsByClassName("full_screen_section")[0].children
 let colorTrainStartLetter = {
   red: -1,
   blue: -2,
