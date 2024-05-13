@@ -1,11 +1,11 @@
 @font-face {
   font-family: commodore_pixelated;
-  src: url(../../public/CommodorePixelized.ttf);
+  src: url(../public/CommodorePixelized.ttf);
 }
 
 @font-face {
   font-family: space_theme;
-  src: url(../../public/SpaceTheme.ttf);
+  src: url(../public/SpaceTheme.ttf);
 }
 
 ::-webkit-scrollbar {
