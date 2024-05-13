@@ -3,6 +3,20 @@
   src: url(../../public/CommodorePixelized.ttf);
 }
 
+@font-face {
+  font-family: title;
+  src: url(../../public/Title.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #0f0; 
+  border-radius: 4px;
+}
+
 body {
   background-color: #000;
   display: flex;
@@ -11,6 +25,7 @@ body {
   margin-top: 0px;
   margin-left: 18px;
   margin-right: 18px;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, p, span {
@@ -21,6 +36,11 @@ h1, h2, h3, h4, p, span {
 
 h1 {
   text-align: center;
+  font-size: min(2em, 10vw);
+}
+
+img {
+  width: min(60vw, 400px);
 }
 
 footer {
@@ -45,7 +65,10 @@ footer {
 }
 
 .website_title_letter {
-  font-size: min(6vw, 3em);
+  font-size: min(4.5vw, 3em);
+  font-family: 'title';
+  padding: min(5px, 0.5vw);
+  color: #fff;
 }
 
 .website_title_container {
@@ -70,14 +93,20 @@ footer {
 }
 
 .content_item {
-  margin-bottom: 200px;
   width: 100%;
+  display: flex;
+}
+
+.content_item_margin {
+  width: 100%;
+  height: 200px;
   display: flex;
 }
 
 .timeline_dates {
   width: 20%;
   display: flex;
+  font-size: min(2vw, 1.25em);
 }
 
 .content {
@@ -88,19 +117,150 @@ footer {
 }
 
 .content_text {
-  width: 80%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#journey_title {
-  margin-bottom: 100px;
+.item_title {
+  font-size: min(4.5vw, 2em);
 }
 
-#timeline_line {
+.game-container {
   height: 100%;
-  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .game-container {
+    flex-direction: column;
+  }
+}
+
+.game-button-2019 {
+  background-color: black;
+  border: 3px solid rgb(0, 255, 255);
+  margin: 30px;
+}
+
+.cyan {
+  color: rgb(0, 255, 255);
+}
+
+.cyan_border {
+  border: 3px solid rgb(0, 255, 255);
+}
+
+.red {
+  color: rgb(255, 0, 0);
+}
+
+.red_border {
+  border: 3px solid rgb(255, 0, 0);
+}
+
+.purple {
+  color: #a0f;
+}
+
+.purple_border {
+  border: 3px solid #a0f;
+}
+
+.pink {
+  color: #f0f;
+}
+
+.pink_border {
+  border: 3px solid #f0f;
+}
+
+.orange {
+  color: #fa0;
+}
+
+.orange_border {
+  border: 3px solid #fa0;
+}
+
+#journey_title {
+  font-size: min(4.5vw, 3em);
+}
+
+#timeline_line_2019 {
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 5px;
+  background-color: rgb(0, 255, 255);
+}
+
+#timeline_line_2019_to_2020 {
+  height: 100%;
+  width: 5px;
+  background-image: linear-gradient(#0ff, #f00);;
+}
+
+#timeline_line_2020 {
+  height: 100%;
+  width: 5px;
+  background-color: rgb(255, 0, 0);
+}
+
+#timeline_line_2020_to_2021 {
+  height: 100%;
+  width: 5px;
+  background-image: linear-gradient(#f00, #a0f);;
+}
+
+#timeline_line_2021 {
+  height: 100%;
+  width: 5px;
+  background-color: #a0f;
+}
+
+#timeline_line_2021_to_2022 {
+  height: 100%;
+  width: 5px;
+  background-image: linear-gradient(#a0f, #f0f);;
+}
+
+#timeline_line_2022 {
+  height: 100%;
+  width: 5px;
+  background-color: #f0f;
+}
+
+#timeline_line_2022_to_2023 {
+  height: 100%;
+  width: 5px;
+  background-image: linear-gradient(#f0f, #fa0);;
+}
+
+#timeline_line_2023 {
+  height: 100%;
+  width: 5px;
+  background-color: #fa0;
+}
+
+#timeline_line_2022_to_2023 {
+  height: 100%;
+  width: 5px;
+  background-image: linear-gradient(#f0f, #fa0);;
+}
+
+#timeline_line_2023_to_2024 {
+  height: 100%;
+  width: 5px;
+  background-image: linear-gradient(#fa0, #0f0);;
+}
+
+#timeline_line_2024 {
+  height: 100%;
   width: 5px;
   background-color: #0f0;
 }
