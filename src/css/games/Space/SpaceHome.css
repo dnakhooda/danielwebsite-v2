@@ -1,0 +1,70 @@
+body {
+  padding-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: 'commodore_pixelated'
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-family:'space_theme';
+  color: white;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: 5px solid #fff;
+  color: #fff;
+  font-family: 'space_theme';
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+}
+
+.main_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(700px, 100%);
+  height: 500px;
+}
+
+@media (min-width: 800px) {
+  .main_body {
+    border: 5px solid #fff;
+  }
+}
+
+#play_button{
+  background-color: #800;
+}
+
+#about_button{
+  background-color: #080;
+}
+
+#credits_button{
+  background-color: #008;
+}
+
+#home_canvas {
+  position: absolute;
+  z-index: -1;
+  width: min(700px, 100%);
+  height: 500px;
+}
+
+#back_text {
+  margin-top: 90px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}

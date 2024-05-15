@@ -57,7 +57,7 @@ span {
 }
 
 @media (max-width: 800px) {
-  .game-container {
+  .content_button_image_container {
     flex-direction: column;
   }
 }

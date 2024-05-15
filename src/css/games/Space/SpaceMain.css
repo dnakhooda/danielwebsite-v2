@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  font-weight: normal;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 0px;
+  }
+}
+
+button {
+  font-size: 15px;
+  font-family: 'commodore_pixelated';
+  border-color: #000;
+  background-color: #000;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+a {
+  font-family: 'commodore_pixelated';
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.main_body {
+  width: min(700px, 100%);
+  height: 600px;
+}
+
+@media (min-width: 800px) {
+  .main_body {
+    border: 5px solid #fff;
+  }
+}
+
+.top_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-family: 'space_theme';
+  color: #fff;
+  margin-right: min(50px, 3vw);
+  margin-left: min(50px, 3vw);
+}
+
+#canvas_container {
+  width: min(700px, 100%);
+  height: 400px;
+}
+
+#main_canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#speech_text {
+  text-align: left;
+}
+
+#back_text {
+  margin-top: 40px;
+  width: 60%;
+  text-align: center;
+}

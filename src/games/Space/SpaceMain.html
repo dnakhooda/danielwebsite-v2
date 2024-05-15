@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Space Game</title>
+    <link rel="icon" href="../../public/SpaceIcon.png">
+
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <link rel="stylesheet" href="../../css/games/Space/SpaceMain.css">
+  </head>
+  <body>
+    <div class="main_body">
+
+      <div class="top_header">
+        <button type="button" name="Restart Button" id="restart_button" onclick="window.reload();">Retry</button>
+        <h1 id="title">Space</h1>
+        <button type="button" name="Home Button" id="home_button">Home</button>
+      </div>
+
+      <div id="canvas_container">
+        <canvas id="main_canvas" width="100%" height="300"></canvas>
+      </div>
+      
+      <p id="speech_text"></p>
+    </div>
+
+    <a href="../../index.html#space_button_image_container" id="back_text">Back to Game Selection</button>
+
+    <script src="../../script/lib/jquery-3.4.1.min.js" charset="utf-8" defer></script>
+
+    <script src="../../script/games/Space/AnyLevel.js" charset="utf-8" defer></script>
+    <script src="../../script/games/Space/Functions.js" charset="utf-8" defer></script>
+    <script src="../../script/games/Space/Controls.js" charset="utf-8" defer></script>
+    <script src="../../script/games/Space/collision.js" charset="utf-8" defer></script>
+    <script src="../../script/games/Space/MainScript.js" charset="utf-8" defer></script>
+    
+    <script src="../../script/completion.js" defer></script>
+  </body>
+</html>
