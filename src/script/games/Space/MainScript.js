@@ -363,6 +363,7 @@ function main() {
       makeCanvasCoverFullScreen(700, 400);
       localStorage.setItem('level', level);
 			window.requestAnimationFrame(loop, canvas);
+      checkSpace();
 		}
 		window.requestAnimationFrame(loop, canvas);
 };

@@ -5,64 +5,63 @@ if (!DotGameComp) {
     localStorage.setItem('DotGameComp', DotGameComp);
 };
 
-let aliensComp = localStorage.getItem("aliensComp");
-if (!aliensComp) {
-    aliensComp = "0";
-    localStorage.setItem('aliensComp', aliensComp);
+let AliensComp = localStorage.getItem("AliensComp");
+if (!AliensComp) {
+    AliensComp = "0";
+    localStorage.setItem('aliensComp', AliensComp);
 };
 
-let spaceComp = localStorage.getItem("spaceComp");
-if (!spaceComp) {
-    spaceComp = "0";
-    localStorage.setItem('spaceComp', spaceComp);
+let SpaceComp = localStorage.getItem("SpaceComp");
+if (!SpaceComp) {
+    SpaceComp = "0";
+    localStorage.setItem('SpaceComp', SpaceComp);
 };
-
-
 
 // File location
-var url = window.location.pathname;
-var filename = url.substring(url. lastIndexOf('/')+1);
+let url = window.location.pathname;
+let filename = url.substring(url.lastIndexOf('/')+1);
 
-
-
-setInterval(function(){
-    if (filename == "games.html") {
-        setGame();
-    }
-    else if (filename == "Space.html") {
-        checkAliens();
-    }
-    else if (filename == "Dot.html") {
-        checkDot();
-    }
-    else if (filename == "Main.html") {
-        checkSpace();
-    };
-});
+if (filename == "" || filename == " " || filename == "index.html")
+    setGame();
 
 function setGame() {
-    document.getElementById("Aliens-Completion").innerHTML = aliensComp + "%";
-    document.getElementById("Dot-Completion").innerHTML = DotGameComp + "%";
-    document.getElementById("Space-Completion").innerHTML = spaceComp + "%";
-};
+    document.getElementById("Aliens-Completion").innerHTML = AliensComp + "% Complete";
+    document.getElementById("Dot-Completion").innerHTML = DotGameComp + "% Complete";
+    document.getElementById("Space-Completion").innerHTML = SpaceComp + "% Complete";
+}
 
 function checkAliens() {
-    if (seconds > parseInt(aliensComp) && seconds < 101) {
-        aliensComp = seconds;
-        localStorage.setItem('aliensComp', aliensComp);
-    };
-};
+    if (seconds > parseInt(AliensComp) && seconds < 101) {
+        AliensComp = seconds;
+        localStorage.setItem('AliensComp', AliensComp);
+    }
+}
 
 function checkDot() {
-    if (Level > parseInt(DotGameComp)/10 && Level < 11) {
-        DotGameComp = Level * 10;
+    if (Level == "8a" || Level == "8b") {
+        DotGameComp = 70
         localStorage.setItem('DotGameComp', DotGameComp);
-    };
-};
+        return;
+    }
+    if (Level > parseInt(DotGameComp)/10 - 10 && Level < 12) {
+        DotGameComp = Level * 10 - 10;
+        localStorage.setItem('DotGameComp', DotGameComp);
+    }
+}
 
 function checkSpace() {
-    if (level > parseInt(spaceComp)/5 && level < 21) {
-        spaceComp = level * 5;
-        localStorage.setItem('spaceComp', spaceComp);
-    };
-};
+    if (parseInt(SpaceComp) >= 100) {
+        localStorage.setItem('SpaceComp', 100);
+        return;
+    }
+    if (level > parseInt(SpaceComp)/5.8 - 1 && level < 20) {
+        SpaceComp = Math.floor(level * 5.8 - 5.8);
+        localStorage.setItem('SpaceComp', SpaceComp);
+    }
+}
+
+function clear() {
+    localStorage.setItem('DotGameComp', 0);
+    localStorage.setItem('AliensComp', 0);
+    localStorage.setItem('SpaceComp', 0);
+}

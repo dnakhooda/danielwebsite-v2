@@ -203,6 +203,7 @@ function globalvar() {
 
 function loop() {
   setInterval(function() {
+    checkAliens();
     if (gameOver == false) {
       update();
       draw();
@@ -249,8 +250,6 @@ function makeCanvasCoverFullScreen(xRatio, yRatio) {
     canvas.style.width = `${$(".main_body").innerHeight() * (xRatio / yRatio)}px`;
     canvas.style.height = `${$(".main_body").innerHeight()}px`;
   }
-  console.log($(".main_body").innerWidth())
-  console.log(canvas.style.width)
 }
 
 

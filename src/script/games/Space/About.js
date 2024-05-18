@@ -1,4 +1,4 @@
-$("#theTitle").click(function(event) {
+$("h1").click(function(event) {
   var answer = prompt("Why did you click me?!");
 
   if (answer == "Why Not") {

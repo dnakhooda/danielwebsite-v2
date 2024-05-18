@@ -226,7 +226,7 @@ function draw() {
   else if (Level == 11) {
     coins = Number(coins) + 75;
     Level = Level = "Winner";
-    document.getElementById("title").innerHTML = "You Win... Now go away"
+    document.getElementsByTagName(h1)[0].innerHTML = "You Win... Now go away"
   }
 
 
@@ -808,6 +808,7 @@ function update() {
       Level = "8a";
     }
     init();
+    checkDot();
   }
 }
 function checkCollision(a, b) {
