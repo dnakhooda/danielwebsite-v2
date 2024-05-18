@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  font-family:"space_theme";
+  color: white;
+  font-weight: normal;
+}
+
+h2 {
+  font-family:"commodore_pixelated";
+  color: white;
+  font-weight: normal;
+}
+
+p {
+  color: white;
+  font-size: 12px;
+}
+
+a {
+  font-family: "commodore_pixelated";
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+}
+
+.main_body {
+  width: min(700px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .main_body {
+    border: 5px solid #fff;
+  }
+}

@@ -1,0 +1,49 @@
+body {
+  color: #fff;
+  text-align: center;
+  font-family: 'commodore_pixelated';
+}
+
+button {
+  border-color: white;
+  color: white;
+  height: 40px;
+  font-size: 20px;
+  font-family: 'commodore_pixelated';
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+p {
+  font-size: 17px;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 35px;
+}
+
+.main_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(800px, 100%);
+}
+
+#game_over_title {
+  line-height: 200px;
+  color: white;
+  color: red;
+  width: 700px;
+  height: 315px;
+  font-size: 30px;
+}

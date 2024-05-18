@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+  font-family:"space_theme";
+  color: white;
+  font-weight: normal;
+}
+
+p {
+  font-family: "commodore_pixelated";
+  font-size: 20px;
+  text-align: center;
+}
+
+a {
+  font-family: "commodore_pixelated";
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+}
+
+.main_body {
+  width: min(700px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .main_body {
+    border: 5px solid #fff;
+  }
+}
+
+#red{
+  color: #ff0000;
+}
+
+#blue{
+  color: #72bcd4;
+}
+
+#green{
+  color: #00b300;
+}
+
+#purple{
+  color: #9a009a;
+}
+
+#white{
+  color: #fff;
+}

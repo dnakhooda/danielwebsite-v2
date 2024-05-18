@@ -1,3 +1,5 @@
+if (window.innerWidth <= 800)
+  alert("This Game Is Not Supported On Mobile!");
 
 var Level = 1;
 var Playing = false;
@@ -11,7 +13,7 @@ var selection = 0;
 Player = Player = true;
 Level = Level = 1;
 
-var canvas = document.getElementById("dotCanvas");
+var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 const HEIGHT = canvas.height;
@@ -828,10 +830,22 @@ function main() {
 
     update();
     draw();
+    makeCanvasCoverFullScreen(800, 450);
 
     window.requestAnimationFrame(loop, canvas);
   }
   window.requestAnimationFrame(loop, canvas);
+}
+
+function makeCanvasCoverFullScreen(xRatio, yRatio) {
+  if ($(".canvas_container").innerHeight() > $(".canvas_container").innerWidth() * (yRatio / xRatio)) {
+    canvas.style.width = `${$(".canvas_container").innerWidth()}px`;
+    canvas.style.height = `${$(".canvas_container").innerWidth() * (yRatio / xRatio)}px`;
+  }
+  else {
+    canvas.style.width = `${$(".canvas_container").innerHeight() * (xRatio / yRatio)}px`;
+    canvas.style.height = `${$(".canvas_container").innerHeight()}px`;
+  }
 }
 
 function init() {

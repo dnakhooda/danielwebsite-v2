@@ -349,7 +349,6 @@ var l17En1 = {
     l17En1.height = 10;
   }
 }
-
 function main() {
 		init();
     levelRepeatStuff();
@@ -361,11 +360,23 @@ function main() {
       }
 			draw();
       controls();
+      makeCanvasCoverFullScreen(700, 400);
       localStorage.setItem('level', level);
 			window.requestAnimationFrame(loop, canvas);
 		}
 		window.requestAnimationFrame(loop, canvas);
 };
+
+function makeCanvasCoverFullScreen(xRatio, yRatio) {
+  if ($(".main_body").innerHeight() > $(".main_body").innerWidth() * (yRatio / xRatio)) {
+    canvas.style.width = `${$(".main_body").innerWidth()}px`;
+    canvas.style.height = `${$(".main_body").innerWidth() * (yRatio / xRatio)}px`;
+  }
+  else {
+    canvas.style.width = `${$(".main_body").innerHeight() * (xRatio / yRatio)}px`;
+    canvas.style.height = `${$(".main_body").innerHeight()}px`;
+  }
+}
 
 var starOpacity = Math.random();
 
@@ -407,16 +418,16 @@ function draw() {
 
     if (level != 0) {
       ctx.fillStyle = "white";
-      ctx.font = "15px Commodore2";
+      ctx.font = "15px commodore_pixelated";
       ctx.fillText("Level: " + Math.floor(level), WIDTH/2 - 140, 20);
 
       ctx.fillStyle = "white";
-      ctx.font = "15px Commodore2";
+      ctx.font = "15px commodore_pixelated";
       ctx.fillText("Time: " + timer, WIDTH/2 - 130, 50);
 
       if (level == 10) {
         ctx.fillStyle = "white";
-        ctx.font = "15px Commodore2";
+        ctx.font = "15px commodore_pixelated";
         ctx.fillText("Boss Level!", WIDTH/2 - 145, 80);
       }
     };
@@ -469,14 +480,14 @@ function draw() {
   }
   else {
     ctx.fillStyle = "Red";
-    ctx.font = "25px Commodore2";
+    ctx.font = "25px commodore_pixelated";
     if (level == 18) {
-      ctx.font = "15px Commodore2";
+      ctx.font = "15px commodore_pixelated";
       ctx.fillText("Level 18 is the last level. It is impossible.", WIDTH/60, HEIGHT/4-25);
       ctx.fillText("Don't try to beat it...", WIDTH/60, HEIGHT/4);
     }
     else {
-      ctx.fillText("Game Over", WIDTH/6, HEIGHT/4-25);
+      ctx.fillText("Game Over", WIDTH/4-75, HEIGHT/4-25);
     }
   }
 
