@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore</title>
+  <link rel="stylesheet" href="./Styles/Main.css">
+  <link rel="shortcut icon" href="#">
+  <script type="module" src="./Script/Engine/Init.js"></script>
+</head>
+<body>
+  <div class="center">
+    <canvas id="canvas" width="3200px" height="1800px"></canvas>
+  </div>
+
+
+  <script>
+// Make Canvas Full Screen
+const resize = () => {
+  const canvas = document.querySelector("canvas")
+  const ratio = [16, 9];
+  if (window.innerHeight > window.innerWidth * (ratio[1] / ratio[0])) {
+    canvas.style.width = `${window.innerWidth}px`;
+    canvas.style.height = `${window.innerWidth * (ratio[1] / ratio[0])}px`;
+  }
+  else {
+    canvas.style.width = `${window.innerHeight * (ratio[0] / ratio[1])}px`;
+    canvas.style.height = `${window.innerHeight}px`;
+  }
+}
+
+window.addEventListener("resize", resize)
+resize()
+  </script>
+
+</body>
+</html>

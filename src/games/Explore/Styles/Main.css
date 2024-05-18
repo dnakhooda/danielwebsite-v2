@@ -1,0 +1,11 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-height: 100vh;
+}
+
+body {
+  margin: 0px;
+  background-color: #0f0f0f;
+}
