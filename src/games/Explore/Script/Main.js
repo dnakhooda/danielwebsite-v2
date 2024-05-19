@@ -28,8 +28,6 @@ export const drawFunc = () => {
         ctx.drawImage(loader.getImage("handSlot"), player.getInventory.getLeftHandSlot.getX, player.getInventory.getLeftHandSlot.getY, player.getInventory.getLeftHandSlot.getWidth, player.getInventory.getLeftHandSlot.getHeight);
         ctx.drawImage(loader.getImage("handSlot"), player.getInventory.getRightHandSlot.getX, player.getInventory.getRightHandSlot.getY, player.getInventory.getRightHandSlot.getWidth, player.getInventory.getRightHandSlot.getHeight);
     }
-    if (controller.getKey("Escape"))
-        location.href="../../../index.html";
 };
 export const updateFunc = () => {
     // References
@@ -52,20 +50,20 @@ export const initFunc = () => {
 };
 export const loadFunc = () => {
     // Player
-    loader.addImage("heart", "../Images/player/heart.png");
-    loader.addImage("emptyHeart", "../Images/player/emptyHeart.png");
+    loader.addImage("heart", "./Images/player/heart.png");
+    loader.addImage("emptyHeart", "./Images/player/emptyHeart.png");
     // armor
-    loader.addImage("emptyArmor", "../Images/player/emptyArmor.png");
-    loader.addImage("armor", "../Images/player/armor.png");
-    loader.addImage("slot", "../Images/player/slot.png");
-    loader.addImage("slotHighlighted", "../Images/player/slotHighlighted.png");
-    loader.addImage("handSlot", "../Images/player/handSlot.png");
+    loader.addImage("emptyArmor", "./Images/player/emptyArmor.png");
+    loader.addImage("armor", "./Images/player/armor.png");
+    loader.addImage("slot", "./Images/player/slot.png");
+    loader.addImage("slotHighlighted", "./Images/player/slotHighlighted.png");
+    loader.addImage("handSlot", "./Images/player/handSlot.png");
     // Water
     for (let water = 1; water < 2; water++)
-        loader.addImage(`water${water}`, `../Images/water/water${water}.png`);
+        loader.addImage(`water${water}`, `./Images/water/water${water}.png`);
     // Sand
     for (let sand = 1; sand < 3; sand++)
-        loader.addImage(`sand${sand}`, `../Images/sand/sand${sand}.png`);
+        loader.addImage(`sand${sand}`, `./Images/sand/sand${sand}.png`);
     // Other Textures
     for (let textureNum = 0; textureNum < 4; textureNum++) {
         let texture = "";
@@ -83,34 +81,34 @@ export const loadFunc = () => {
                 texture = "snow";
                 break;
         }
-        loader.addImage(`${texture}-up`, `../Images/${texture}/${texture}-up.png`);
-        loader.addImage(`${texture}-down`, `../Images/${texture}/${texture}-down.png`);
-        loader.addImage(`${texture}-right`, `../Images/${texture}/${texture}-right.png`);
-        loader.addImage(`${texture}-left`, `../Images/${texture}/${texture}-left.png`);
-        loader.addImage(`${texture}-up-right`, `../Images/${texture}/${texture}-up-right.png`);
-        loader.addImage(`${texture}-up-left`, `../Images/${texture}/${texture}-up-left.png`);
-        loader.addImage(`${texture}-down-right`, `../Images/${texture}/${texture}-down-right.png`);
-        loader.addImage(`${texture}-down-left`, `../Images/${texture}/${texture}-down-left.png`);
+        loader.addImage(`${texture}-up`, `./Images/${texture}/${texture}-up.png`);
+        loader.addImage(`${texture}-down`, `./Images/${texture}/${texture}-down.png`);
+        loader.addImage(`${texture}-right`, `./Images/${texture}/${texture}-right.png`);
+        loader.addImage(`${texture}-left`, `./Images/${texture}/${texture}-left.png`);
+        loader.addImage(`${texture}-up-right`, `./Images/${texture}/${texture}-up-right.png`);
+        loader.addImage(`${texture}-up-left`, `./Images/${texture}/${texture}-up-left.png`);
+        loader.addImage(`${texture}-down-right`, `./Images/${texture}/${texture}-down-right.png`);
+        loader.addImage(`${texture}-down-left`, `./Images/${texture}/${texture}-down-left.png`);
     }
-    loader.addImage(`player`, `../Images/player/player-up.png`);
-    loader.addImage(`player-shadow`, `../Images/player/player-shadow.png`);
+    loader.addImage(`player`, `./Images/player/player-up.png`);
+    loader.addImage(`player-shadow`, `./Images/player/player-shadow.png`);
     // Grass
     for (let grass = 1; grass < 5; grass++)
-        loader.addImage(`grass${grass}`, `../Images/grass/grass${grass}.png`);
+        loader.addImage(`grass${grass}`, `./Images/grass/grass${grass}.png`);
     // Stone
     for (let stone = 1; stone < 3; stone++)
-        loader.addImage(`stone${stone}`, `../Images/stone/stone${stone}.png`);
+        loader.addImage(`stone${stone}`, `./Images/stone/stone${stone}.png`);
     // Snow
     for (let snow = 1; snow < 2; snow++)
-        loader.addImage(`snow${snow}`, `../Images/snow/snow${snow}.png`);
+        loader.addImage(`snow${snow}`, `./Images/snow/snow${snow}.png`);
     for (let twig = 1; twig < 4; twig++) {
-        loader.addImage(`twig${twig}`, `../Images/twig/twig${twig}.png`);
-        loader.addImage(`twig${twig}Shadow`, `../Images/twig/twig${twig}Shadow.png`);
+        loader.addImage(`twig${twig}`, `./Images/twig/twig${twig}.png`);
+        loader.addImage(`twig${twig}Shadow`, `./Images/twig/twig${twig}Shadow.png`);
     }
     // Plants
     for (let plants = 1; plants < 5; plants++) {
-        loader.addImage(`plant${plants}`, `../Images/plants/plant${plants}.png`);
-        loader.addImage(`plant${plants}Shadow`, `../Images/plants/plant${plants}Shadow.png`);
+        loader.addImage(`plant${plants}`, `./Images/plants/plant${plants}.png`);
+        loader.addImage(`plant${plants}Shadow`, `./Images/plants/plant${plants}Shadow.png`);
     }
-    loader.addImage("wood", "../Images/items/wood.png");
+    loader.addImage("wood", "./Images/items/wood.png");
 };

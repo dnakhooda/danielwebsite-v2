@@ -54,10 +54,13 @@ function checkSpace() {
         localStorage.setItem('SpaceComp', 100);
         return;
     }
-    if (level > parseInt(SpaceComp)/5.8 - 1 && level < 20) {
+
+    if (level == 0)
+        SpaceComp = 0;
+    else if (level > parseInt(SpaceComp)/5.8 - 1 && level < 20)
         SpaceComp = Math.floor(level * 5.8 - 5.8);
-        localStorage.setItem('SpaceComp', SpaceComp);
-    }
+    
+    localStorage.setItem('SpaceComp', SpaceComp);
 }
 
 function clear() {

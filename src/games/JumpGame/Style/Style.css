@@ -1,0 +1,21 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+    background-color: #666666;
+    width: 1000px;
+    height: 1000px;
+}
+
+.toLoad {
+    visibility: hidden;
+}
+
+body {
+    background-color: #333333;
+    margin: 0px;
+    padding: 0px;
+}
