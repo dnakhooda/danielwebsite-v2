@@ -68,7 +68,7 @@
           <img src="./public/DotGameImage1.PNG" alt="Dot Game Image" class="cyan_border" style="margin: 30px;">
 
           <div class="content_button_image_container" id="dot_game_button_image_container">
-            <button class="content_button cyan_border" onclick="location.href = './games/TheDotGame/DotGame.html';">
+            <button class="content_button cyan_border" onclick="location.href = './games/TheDotGame/DotGame.html'; if (window.innerWidth <= 800) alert('This Game Is Not Supported On Mobile!');">
               <h2 class="cyan">Play The Dot Game</h2>
               <p class="cyan" id="Dot-Completion"></p>
             </button>
@@ -83,7 +83,7 @@
           <img src="./public/AliensImage1.PNG" alt="Aliens Image" class="cyan_border" style="margin: 30px;">
 
           <div class="content_button_image_container" id="aliens_button_image_container">            
-            <button class="content_button cyan_border" onclick="location.href = './games/Aliens/Aliens.html';">
+            <button class="content_button cyan_border" onclick="location.href = './games/Aliens/Aliens.html'; if (window.innerWidth <= 800) alert('This Game Is Not Supported On Mobile!');">
               <h2 class="cyan">Play Aliens</h2>
               <p class="cyan" id="Aliens-Completion"></p>
             </button>
@@ -98,7 +98,7 @@
           <img src="./public/SpaceImage1.PNG" alt="Space Image" class="cyan_border" style="margin: 30px;">
 
           <div class="content_button_image_container" id="space_button_image_container">
-            <button class="content_button cyan_border" onclick="location.href = './games/Space/SpaceHome.html';">
+            <button class="content_button cyan_border" onclick="location.href = './games/Space/SpaceHome.html'; if (window.innerWidth <= 800) alert('This Game Is Not Supported On Mobile!');">
               <h2 class="cyan">Space</h2>
               <p class="cyan" id="Space-Completion"></p>
             </button>
@@ -185,7 +185,7 @@
 
           <p class="purple">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-          <div class="content_button_image_container" id="explorer_button_image_container">
+          <div class="content_button_image_container" id="neutron_button_image_container">
             
             <button class="content_button purple_border" onclick="location.href = 'https://github.com/dnakhooda/Neutron/blob/main/src/Script/Neutron/Neutron.ts';">
               <h2 class="purple">Go To Neutron GitHub Repository</h2>
@@ -228,26 +228,32 @@
           <h1 class="content_item_title pink">Example Games Using Engine</h1>
 
           <p class="pink">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-          <div class="content_button_image_container" id="">
+          
+          <div class="content_button_image_container" id="explore_and_platformer_image_container">
+            <img src="./public/ExploreImage1.PNG" alt="Space Image" class="pink_border" style="margin: 30px; height: min(30vw, 200px);">
+
+            <img src="./public/PlatformerImage1.PNG" alt="Space Image" class="pink_border" style="margin: 30px; height: min(30vw, 200px);">
+          </div>
+
+          <div class="content_button_image_container" id="flappy_and_platformer_button_image_container">
             
-            <button class="content_button pink_border" onclick="location.href = './games/FlappyBird/FlappyBird.html';">
+            <button class="content_button pink_border" onclick="location.href = './games/FlappyBird/FlappyBird.html'; if (window.innerWidth <= 800) alert('This Game Is Not Supported On Mobile!');">
               <h2 class="pink">Play Flappy Bird</h2>
             </button>
 
-            <button class="content_button pink_border" onclick="location.href = './games/Platformer/Platformer.html';">
+            <button class="content_button pink_border" onclick="location.href = './games/Platformer/Platformer.html'; if (window.innerWidth <= 800) alert('This Game Is Not Supported On Mobile!');">
               <h2 class="pink">Play Platformer</h2>
             </button>
             
           </div>
 
-          <div class="content_button_image_container" id="">
+          <div class="content_button_image_container" id="jump_and_explore_button_image_container">
             
-            <button class="content_button pink_border" onclick="location.href = './games/JumpGame/JumpGame.html';">
+            <button class="content_button pink_border" onclick="location.href = './games/JumpGame/JumpGame.html'; if (window.innerWidth <= 800) alert('This Game Is Not Supported On Mobile!');">
               <h2 class="pink">Play Jump Code</h2>
             </button>
 
-            <button class="content_button pink_border" onclick="location.href = './games/Explore/Explore.html';">
+            <button class="content_button pink_border" onclick="location.href = './games/Explore/Explore.html'; if (window.innerWidth <= 800) alert('This Game Is Not Supported On Mobile!');">
               <h2 class="pink">Play Explore</h2>
             </button>
             
@@ -288,7 +294,19 @@
           <h1 class="content_item_title orange">Self-Care App</h1>
 
           <p class="orange">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
+          
+          <div class="content_button_image_container">
+            
+            <button class="content_button orange_border" onclick="location.href = 'https://github.com/dnakhooda/SelfCareApp';">
+              <h2 class="orange">Go To Self-Care App GitHub</h2>
+            </button>
+            
+            <img src="./public/SelfCareImage1.png" alt="Self-Care Image" class="orange_border" style="margin: 30px; width: min(40vw, 267px);">
+
+          </div>
+
+          <p class="orange">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
         </div>
       </div>
 
@@ -323,7 +341,31 @@
           <h1 class="content_item_title">Fees App & My Website</h1>
 
           <p>&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
+          
+          <div class="content_button_image_container">
+            
+            <img src="./public/FeesAppImage1.png" alt="FeesApp Image" class="green_border" style="margin: 30px; width: min(40vw, 267px);">
+
+            <button class="content_button green_border" onclick="location.href = 'https://github.com/dnakhooda/FeesApp';">
+              <h2 class="green">Go To Fees App GitHub</h2>
+            </button>
+
+          </div>
+
+          <p class="green">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <div class="content_button_image_container">
+
+            <button class="content_button green_border" onclick="location.href = 'https://github.com/dnakhooda/2024danielwebsite';">
+              <h2 class="green">Go To Daniel Website GitHub</h2>
+            </button>
+
+            <img src="./public/DanielWebsiteImage1.PNG" alt="Daniel Website Image" class="green_border" style="margin: 30px;">
+
+          </div>
+
+          <p class="green">&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
         </div>
       </div>
 

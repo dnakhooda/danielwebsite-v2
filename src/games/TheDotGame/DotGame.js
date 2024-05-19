@@ -1,6 +1,3 @@
-if (window.innerWidth <= 800)
-  alert("This Game Is Not Supported On Mobile!");
-
 var Level = 1;
 var Playing = false;
 var LHeight = 1;

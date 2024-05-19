@@ -3,8 +3,6 @@ let aboutButton = document.getElementById("about_button");
 let creditsButton = document.getElementById("credits_button");
 
 playButton.onclick = function() {
-  if (window.innerWidth <= 800)
-    alert("This Game Is Not Supported On Mobile!");
   window.location.assign("../../games/Space/SpaceMain.html");
 };
 aboutButton.onclick = function() {

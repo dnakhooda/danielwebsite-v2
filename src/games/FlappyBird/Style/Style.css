@@ -1,17 +1,46 @@
+body {
+    background-color: #111;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'commodore_pixelated';
+    font-size: 1em;
+    background-color: #222;
+    border-radius: 10px;
+    border:none;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
 .center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#restart_button {
+    bottom: 100px;
+    left: 10px;
+}
+
+#back_button {
+    bottom: 10px;
+    left: 10px;
+}
+
 #canvas {
     background-color: #000000;
     width: 1600px;
     height: 900px;
-}
-
-body {
-    background-color: #000000;
-    margin: 0px;
-    padding: 0px;
 }

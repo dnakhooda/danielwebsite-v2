@@ -12,68 +12,33 @@ let colorTrainStartLetter = {
 
 function changeColor(colorTrainStartLetter) {
   for (let i = 0; i < titleCharacters.length; i++) {
-    if (i == colorTrainStartLetter.red) {
+    if (i == colorTrainStartLetter.red)
       titleCharacters.item(i).style.color = "#f00"
-    }
-    else if (i == colorTrainStartLetter.blue) {
+    else if (i == colorTrainStartLetter.blue)
       titleCharacters.item(i).style.color = "#00f"
-    }
-    else if (i == colorTrainStartLetter.pink) {
+    else if (i == colorTrainStartLetter.pink)
       titleCharacters.item(i).style.color = "#f0f"
-    }
-    else if (i == colorTrainStartLetter.cyan) {
+    else if (i == colorTrainStartLetter.cyan)
       titleCharacters.item(i).style.color = "#0ff"
-    }
-    else if (i == colorTrainStartLetter.yellow) {
+    else if (i == colorTrainStartLetter.yellow)
       titleCharacters.item(i).style.color = "#ff0"
-    }
-    else if (i == colorTrainStartLetter.purple) {
+    else if (i == colorTrainStartLetter.purple)
       titleCharacters.item(i).style.color = "#a0f"
-    }
-    else if (i == colorTrainStartLetter.orange) {
+    else if (i == colorTrainStartLetter.orange)
       titleCharacters.item(i).style.color = "#fa0"
-    }
-    else if (i == colorTrainStartLetter.green) {
+    else if (i == colorTrainStartLetter.green)
       titleCharacters.item(i).style.color = "#0f0"
-    }
-    else {
+    else
       titleCharacters.item(i).style.color = "#fff"
-    }
   }
 }
 
 function addToColors(colorTrainStartLetter) {
-  colorTrainStartLetter.red++;
-  if (colorTrainStartLetter.red > titleCharacters.length)
-    colorTrainStartLetter.red = 0;
-
-  colorTrainStartLetter.blue++;
-  if (colorTrainStartLetter.blue > titleCharacters.length)
-    colorTrainStartLetter.blue = 0;
-
-  colorTrainStartLetter.pink++;
-  if (colorTrainStartLetter.pink > titleCharacters.length)
-    colorTrainStartLetter.pink = 0;
-
-  colorTrainStartLetter.cyan++;
-  if (colorTrainStartLetter.cyan > titleCharacters.length)
-    colorTrainStartLetter.cyan = 0;
-
-  colorTrainStartLetter.yellow++;
-  if (colorTrainStartLetter.yellow > titleCharacters.length)
-    colorTrainStartLetter.yellow = 0;
-
-  colorTrainStartLetter.purple++;
-  if (colorTrainStartLetter.purple > titleCharacters.length)
-    colorTrainStartLetter.purple = 0;
-
-  colorTrainStartLetter.orange++;
-  if (colorTrainStartLetter.orange > titleCharacters.length)
-    colorTrainStartLetter.orange = 0;
-
-  colorTrainStartLetter.green++;
-  if (colorTrainStartLetter.green > titleCharacters.length)
-    colorTrainStartLetter.green = 0;
+  for (const property in colorTrainStartLetter) {
+    colorTrainStartLetter[property]++;
+    if (colorTrainStartLetter[property] > titleCharacters.length)
+      colorTrainStartLetter[property] = 0
+  }
 }
 
 setInterval(() => {

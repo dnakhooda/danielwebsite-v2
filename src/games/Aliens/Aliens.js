@@ -1,6 +1,3 @@
-if (window.innerWidth <= 800)
-  alert("This Game Is Not Supported On Mobile!");
-
 var canvas = document.getElementById('canvas')
 var ctx = canvas.getContext("2d");
 

@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platformer</title>
-    <link rel="stylesheet" href="Style/Style.css">
     <link rel="shortcut icon" href="#">
+
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <link rel="stylesheet" href="Style/Style.css">
+
     <script type="module" src="./Script/Library/Init.js" defer></script>
 </head>
     <body>
         <div class="center">
             <canvas id="canvas"></canvas>
+            <button onclick="window.location.reload();" id="restart_button">Restart</button>
+            <button onclick="location.href='../../index.html#explore_and_platformer_image_container'" id="back_button">Back</button>
         </div>
     </body>
 </html>
