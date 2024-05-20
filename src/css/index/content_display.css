@@ -9,6 +9,12 @@ span {
   color: #fff;
 }
 
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff;
+}
+
 .main_body {
   width: 100%;
   max-width: 1200px;

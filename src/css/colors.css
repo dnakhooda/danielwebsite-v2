@@ -1,3 +1,15 @@
+.white {
+  color: #fff;
+}
+
+.white_background {
+  background-color: #fff;
+}
+
+.white_border {
+  border: 3px solid rgb(255, 255, 255);
+}
+
 .green {
   color: rgb(0, 255, 0);
 }
