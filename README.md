@@ -1,7 +1,7 @@
 <h1>🧑‍💻 Daniel Website V2 🧑‍💻</h1>
 
 <p>
-Daniel Website V2 is the second version of my website (danielwebsite.com). The code in this repository was on my website from 2023 to 2025. This version of the website contains a timeline of my programming journy from 2020 to 2024. It showcases my various programming projects throughout the years. 
+Daniel Website V2 is the second version of my website (danielwebsite.com). The code in this repository was on my website from 2023 to 2025. This version of the website contains a timeline of my programming journey from 2020 to 2024. It showcases my various programming projects throughout the years. 
 
 <h2>Screenshots</h2>
 
